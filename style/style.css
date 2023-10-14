@@ -1,0 +1,91 @@
+body{
+    position: relative;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*width 75%;*/
+}
+/*---------------------------------------------------------------*/
+header{
+    position: relative;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1, h2{
+    text-align: center;
+    background-color: beige;    
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blueviolet;
+}
+nav > div{
+    display: flex;
+    flex-direction: row;
+    width: 33%;
+    justify-content: center;
+    margin: 0% 1%;
+    background-color: azure;
+}
+nav > div > a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+/*---------------------------------------------------------------*/
+main{
+    margin-top: 1%;
+}
+main > div {
+    height: 32%;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1%;
+}
+main > div > div.main {
+    display: flex;
+}
+main > div > div#main2{
+    flex-direction: row-reverse;
+}
+
+main > div > div > article{
+    height: 100%;
+    margin: 0% 1% 0% 1%;
+}
+main > div > div.main > article{
+    width: 75%;
+    margin: 0% 1% 0% 1%;
+}
+
+main .img{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    height: 30%;
+    width: 25%;
+}
+div.img > img{
+    height: 30%;
+    width: 30%;
+}
+/*---------------------------------------------------------------*/
+footer{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+}
+footer > p{
+    width: 75%;
+    margin: 0% 1%;
+}
