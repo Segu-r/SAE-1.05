@@ -1,15 +1,19 @@
 body{
     position: relative;
-    background-color: aquamarine;
+    background-color: hwb(216 16% 46% / 0.678);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*width 75%;*/
 }
 /*---------------------------------------------------------------*/
+@font-face {
+    font-family: racer;
+    src: url(../racer/Racer.ttf);
+}
 header{
+    font-family: "racer";
     position: relative;
-    background-color: yellow;
+    background-color: rgb(43, 48, 90);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +23,10 @@ h1, h2{
     background-color: beige;    
 }
 
+header > h1{
+    color: rgb(92, 0, 0);
+    font-size: 50px;
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -34,6 +42,8 @@ nav > div{
     background-color: azure;
 }
 nav > div > a{
+    font-size: 30px;    
+    height:40px;
     width: 100%;
     text-align: center;
     text-decoration: none;
