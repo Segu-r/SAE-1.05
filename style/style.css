@@ -1,60 +1,80 @@
 body{
-    position: relative;
+    /*position: relative;*/
     background-color: hwb(216 16% 46% / 0.678);
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
+    background-image: url("../image/alex-rose-ccWJHxUeM7c-unsplash.jpg"); /* l'image de fond*/
+    background-size: cover;
 }
 /*---------------------------------------------------------------*/
 @font-face {
-    font-family: racer;
+    font-family: racer; 
     src: url(../racer/Racer.ttf);
 }
 header{
     font-family: "racer";
-    position: relative;
-    background-color: rgb(43, 48, 90);
-    display: flex;
+   /* position: relative;*/
+    /*display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
 }
 h1, h2{
     text-align: center;
-    background-color: beige;    
 }
 
 header > h1{
-    color: rgb(92, 0, 0);
+    text-shadow: /* contour du titre sur les 4 directions*/
+    2px 2px 0 #000,
+    -2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000;
+    color: rgb(90, 190, 190); /*Escape from Aurora*/
     font-size: 50px;
 }
 nav{
+    font-family: "racer";
+    position: sticky;
+    top: 0px;
+    background-color: rgb(34, 100, 161);
+    margin-left: 8.95%; /* la border "rétrécis" un peu le nav donc pour match le main on diminue un peu la marge*/
+    margin-right: 8.95%;
+    border: 1px solid black; /* bord du nav pour faire ressortir*/
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: blueviolet;
 }
 nav > div{
     display: flex;
     flex-direction: row;
-    width: 33%;
+    width: 22%; /* espace entre acceuil, actualites..*/
     justify-content: center;
-    margin: 0% 1%;
-    background-color: azure;
+       
 }
-nav > div > a{
+nav  div  a{
     font-size: 30px;    
     height:40px;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+    color:rgb(90, 190, 190);    
+    text-shadow: black 0px 0px 2px; /* Pour faire ressortir les lettres avec une petite ombre noir*/
+    text-decoration: none; /* pour pas souligner les menus*/
 }
+.Actu div a {
+    display: none;
+    position: absolute;
+    left:0;
+    
+} /*le sous menu de Actu*/
+
 /*---------------------------------------------------------------*/
 main{
+
     margin-top: 1%;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 main > div {
     height: 32%;
-    background-color: yellowgreen;
+    background-color: rgb(82, 139, 161);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +113,7 @@ footer{
     margin-top: 1%;
     display: flex;
     flex-direction: row;
-    background-color: brown;
+    background-color: rgb(87, 155, 201);
 }
 footer > p{
     width: 75%;
